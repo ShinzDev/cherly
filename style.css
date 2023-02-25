@@ -11,7 +11,10 @@ body {
 }
 
 
- 
+ header{
+    top: 0;
+    position: sticky;
+ }
 
 
 .logo{
@@ -28,6 +31,10 @@ body {
 
 }
 
+
+.logo :hover{
+    animation: none;
+}
 
  .top {
     display: flex;
@@ -51,7 +58,7 @@ body {
     justify-content: right;
     font-size: 40px;
 }
-@keyframes rotate {
+/* @keyframes rotate {
     0%,
     25%,
     50%,
@@ -77,19 +84,14 @@ body {
     100%{
         transform: rotate(360deg);
     }
-}
+} */
 
 
 
 
 
 
-.sticky{
-    position: sticky;
-    top: 0;
-}
-
-section nav >ul {
+nav >ul {
     float:right;
     display: flex;
     margin-top: 40px;
@@ -99,13 +101,13 @@ section nav >ul {
 }
 
 
-section nav ul > li{
+ nav ul > li{
     margin-right: 60px;
     justify-content: space-around;
     
 }
 
-section nav ul  li >a {
+ nav ul  li >a {
     text-decoration: none;
     color: rgba(255, 102, 0, 0.76);
     font-size: 20px;
@@ -113,7 +115,7 @@ section nav ul  li >a {
     transition:  color 0.5s;
 }
 
-section nav ul  li >a:hover{
+ nav ul  li >a:hover{
     color:#f0f8ff  ;
 } 
 
@@ -223,7 +225,7 @@ figcaption{
 
 .container{
     padding: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;    
 }
@@ -231,10 +233,10 @@ figcaption{
 .about_text{
     border: 1px solid rgb(255, 232, 232);
     border-radius: 15px;
-    padding: 40px;
+    padding: 20px;
     width: 40%;
     display: block;
-    margin-right: 0;
+    margin: 10px;
     background-color: #c0c0c0;
     
 }
@@ -244,10 +246,10 @@ figcaption{
     justify-content: space-around;
     border: 1px solid black;
     border-radius: 15px;
-    padding: 40px;
+    padding: 20px;
     width: 40%;
     display: block;
-    margin-left:0;
+    margin:10px;
 }
 
 .scents{
@@ -258,23 +260,123 @@ figcaption{
 
 .item{
     margin: 0;
+    padding: 0;
     text-align: center; 
     color: #000000;
-    transition:  opacity  0.3s ;
-    padding: 0;
-    font-size: 5rem;
+    transition:  transform  0.3s ;
+    font-size: 4rem;
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(0.8);
+
 
 }
 
-.item :hover{
-    /* transform: scale(1.1); */
-    opacity: 0.5;
-   transform: rotate();
+.item:hover{
+    transform: scale(1.0);
+    opacity: 0.7;
+}
+
+.mute{
+    font-size: 7rem;
+    text-align: center;
+    
 }
 
 
 
+  .return{
+    margin-top: 0;
+   position: fixed;
+   bottom: 100px;
+   right: 80px; 
+   width: 40px;
+   
+}  
+.return2  a{
+    position: fixed;
+    bottom: 90px;
+    right: 10px; 
+    background-color: #c08081;
+    padding: 10px;
+    border: none;
+    color: wheat;
+    text-transform: capitalize;
+    border-radius: 25px;
+    text-decoration: dotted;
+    
+ }  
 
+ .shop3{
+    margin-top: 50px;
+    outline-color: #000000;
+    color: #d31a9b;
+    padding: 20px;
+    background-color: #c0c0c0;
+    font-size: 30px;
+    font-family: Playfair Display;
+    text-align: center;
+}
+
+.parent-container3{
+    padding: 50px;
+
+    height: 100%;
+}
+
+ .return2:hover{
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);;
+ }
+.return2:active{
+display:none;
+}
+
+.blogpost1{
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+.blogpost{
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    font-weight: bold;
+
+}
+
+.learn a{
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #d31a9b;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 45vw;
+}
+
+footer{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+
+    
+padding: 30px;
+text-align: center;
+color: #fff;
+}
+
+p span {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 20px;
+    color: #ffffff;
+}
 
 
 
@@ -303,18 +405,18 @@ figcaption{
         overflow-x: hidden;
     }
 
-    .logo{
-      justify-self: center;
-      margin-left: 30px;
+   
+    header{
+        display: none;
     }
-
     .telephone{
-        padding: px;
-        display: block;
+       float: left;
+       margin-left: -100px;
+       margin: bottom 10rem;
     }
 
-    .about_text{
-        display: block;
+    .about_text2{
+        display: none;
     }
     .container{
         /* justify-content: space-between; */
