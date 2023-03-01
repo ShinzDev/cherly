@@ -170,6 +170,8 @@ figcaption{
     display:inline;
     justify-content: center;
     padding-bottom: 2rem;
+    
+
   
     
     
@@ -191,6 +193,76 @@ figcaption{
 
  
 }
+
+aside{
+    float: right;
+    text-align: center;
+    margin-right: 80px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #c0c0c0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes bounce {
+
+    0%{
+        transform: translateY(0);
+    }
+
+    20%{
+        transform: translateY(0);
+        
+        
+    }60%{
+        transform: translateY(-15px);
+        }
+    
+    40%{
+        transform: translateY(-30px);
+    }
+
+
+    60%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-15px);
+    }
+
+
+
+        100%{
+            transform: translate(0);
+        }
+}
+
+.bounce{
+    animation-name: bounce;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .shopitems3{
     margin-left: -290px;

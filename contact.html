@@ -4,26 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
     <title>Document</title>
+
+<style>
+  <style>
+    
+    @keyframes bounce {
+
+0%,
+20%,
+60%,
+100%{
+    transform: translateY(0);
+}
+
+
+    
+60%{
+    transform: translateY(-15px);
+    }
+
+40%{
+    transform: translateY(-30px);
+}
+
+
+
+
+80%{
+    transform: translateY(-15px);
+}
+
+
+}
+
+.bounce{
+animation-name: bounce;
+animation: bounce 1s 0.7s linear infinite; 
+}
+
+
+.animate
+</style>
+    
+
+
+  
+</style>
 </head>
-<body>
-    <h1>
-        BECOME AN AFFLIATE
+
+
+
+
+
+<h1  class="animate bounce">
+        HELLO WORLD!
     </h1>
-    <form action="">
-        <label for="">first name</label>
-        <input type="text" placeholder="name">
-        <br>
-        <br>
-        <label for="">Last name</label>
-        <input type="text" placeholder="Last name">
-        <br>
-        <br>
-        <label for="">Email</label>
-        <input type="email" placeholder="Enter email">
-        <br><br>
-        <input type="submit" value="Submit Form">
-    </form>
 </body>
 </html>
